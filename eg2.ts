@@ -95,7 +95,7 @@ interface person{
 }
 
 class Employee{
-    name: string;
+    protected name: string; //public, private, protected
     constructor(name: string) {
         this.name = name;
     }
