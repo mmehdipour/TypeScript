@@ -104,6 +104,25 @@ class Employee{
     }
 }
 
+class Manager extends Employee{
+    constructor(managerName: string) {
+        super(managerName);
+    }
+    delegateWork() {
+        console.log('Manager deligating tasks')
+    }
+}
+
+const mgr1 = new Manager('Adam');
+mgr1.greet();
+mgr1.delegateWork();
+console.log(mgr1.name);
+
+const employee1 = new Employee("Narash");
+console.log(employee1.name);
+employee1.greet();
+
+
 let x = 10;
 const y = 10;
 
