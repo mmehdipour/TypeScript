@@ -78,6 +78,31 @@ function add2(num1: number, num2: number = 0): number{
 add2(2);
 add2(2, 3);
 
+function fullName(person: { firstName: string, lastName: string }) {
+    console.log(`${person.firstName} - ${person.lastName}`);
+}
+
+let person = {
+    firstName: "Naresh";
+    lastName: "Kumar";
+
+};
+fullName(person);
+
+interface person{
+    firstName: string;
+    lastName: string;
+}
+
+class Employee{
+    name: string;
+    constructor(name: string) {
+        this.name = name;
+    }
+    greet() {
+        console.log(`Good morning ${this.name}`);
+    }
+}
 
 let x = 10;
 const y = 10;
